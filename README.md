@@ -12,6 +12,8 @@ En este repositorio se adjuntaran los laboratorios del curso de Estructra de Dat
 
 ## Laboratorio 1: La maldición de la dimensionalidad
 
+['Informe en PDF'](https://github.com/VictorQuicano/EDA_LABS/blob/main/Lab_01/LABORATORIO1.pdf)
+
 ### Objetivo
 El objetivo de este laboratorio es analizar cómo el espacio cambia a medida que la dimensionalidad  (cantidad de atributos o features ) de los datos aumenta y cuán desafiante esto puede ser.
 ### Descripción del laboratorio
@@ -24,4 +26,10 @@ Realizaremos diversos experimentos en C++ donde trabajaremos con conjuntos de da
 
 ### Resultados obtenidos
 ![Histo_10](https://github.com/VictorQuicano/EDA_LABS/blob/main/Lab_01/histograma10.png?raw=true)
+![Histo_50](https://github.com/VictorQuicano/EDA_LABS/blob/main/Lab_01/histograma50.png?raw=true)
+![Histo_100](https://github.com/VictorQuicano/EDA_LABS/blob/main/Lab_01/histograma100.png?raw=true)
+![Histo_500](https://github.com/VictorQuicano/EDA_LABS/blob/main/Lab_01/histograma500.png?raw=true)
+![Histo_1000](https://github.com/VictorQuicano/EDA_LABS/blob/main/Lab_01/histograma1000.png?raw=true)
+![Histo_2000](https://github.com/VictorQuicano/EDA_LABS/blob/main/Lab_01/histograma2000.png?raw=true)
+![Histo_5000](https://github.com/VictorQuicano/EDA_LABS/blob/main/Lab_01/histograma5000.png?raw=true)
 
