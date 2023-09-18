@@ -3,6 +3,7 @@
 #include <iostream>
 #include <algorithm>
 using namespace std;
+//Genera el punto con la dimension que se le envía
 vector<double> genPuntoDimension(int dimension){
     vector<double> punto;
     random_device rd;
@@ -18,6 +19,7 @@ vector<double> genPuntoDimension(int dimension){
     }
     return punto;
 }
+//Calcula las distancias entre todos los puntos y los almacena en otro vector
 void calcularDistancias(vector<vector<double>> punto,vector<double>& distancias){
     for(int i=0;i<punto.size();i++){
         for(int j=i+1;j<punto.size();j++){
@@ -29,22 +31,23 @@ void calcularDistancias(vector<vector<double>> punto,vector<double>& distancias)
             distancias.push_back(distancia);
         }
     }
-    cout<<"Distancias calculadas: "<<distancias.size()<<endl;
 }
+//Funcion principal, Main recibe como argumentos las dimensiones con las que se desea trabajar
 int main(int argc, char *argv[])
 {
-    
-    
     for(int i=1;i<argc;i++){
         int dimension=atoi(argv[i]);
         vector<vector<double>> puntosAleatorios;
-        cout<<"Dimension: "<<dimension<<endl;
+        //Se generan 100 puntos aleatorios con la dimension que se le envía
         for (int i=0;i<100;i++){
             puntosAleatorios.push_back(genPuntoDimension(dimension));
         }
+        //este vector alamacenará las distancias
         vector<double> distanciaPunto;
         calcularDistancias(puntosAleatorios,distanciaPunto);
+        //ordenamiento de distancias
         sort(distanciaPunto.begin(),distanciaPunto.end());
+        //generación de archivo de texto con las distancias
         ofstream distancias;
         distancias.open("distancias"+to_string(dimension)+".txt");
         for(double a:distanciaPunto){
