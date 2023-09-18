@@ -23,5 +23,5 @@ Realizaremos diversos experimentos en C++ donde trabajaremos con conjuntos de da
 3. Generar un histograma (pueden usar Python) de las distancias obtenidas.
 
 ### Resultados obtenidos
-[Histo_10]('Lab_01/histograma10.png')
+[Histo_10](Lab_01/histograma10.png)
 
